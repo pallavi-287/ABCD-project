@@ -1738,3 +1738,176 @@ img {
     padding: 24px 20px;
   }
 }
+/* EXTRA MOBILE RESPONSIVE FIXES */
+@media (max-width: 600px) {
+  html { font-size: 15px; }
+
+  .navbar-header { padding: 12px 0; }
+  .nav-container { padding: 0 16px; }
+  .nav-logo { font-size: 1.35rem; }
+
+  .nav-links {
+    top: 60px;
+    width: min(280px, 85vw);
+    height: calc(100vh - 60px);
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 105px 16px 55px;
+  }
+
+  .hero-container { gap: 30px; }
+
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+  }
+
+  .countdown-box {
+    width: 100%;
+    padding: 16px 12px;
+  }
+
+  .countdown-timer { gap: 6px; }
+
+  .timer-card {
+    min-width: 0;
+    flex: 1;
+    padding: 10px 5px;
+  }
+
+  .timer-num { font-size: 1.35rem; }
+  .timer-label { font-size: 0.6rem; letter-spacing: 0.5px; }
+  .timer-colon { font-size: 1.1rem; }
+
+  .hero-cta {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-cta .btn { width: 100%; }
+
+  .polaroid-frame {
+    max-width: 92vw;
+    padding: 10px 10px 18px;
+  }
+
+  .photo-container { height: min(115vw, 380px); }
+
+  .caption-handwritten { font-size: 1.3rem; }
+
+  .section { padding: 65px 16px; }
+
+  .section-header { margin-bottom: 38px; }
+  .section-title { font-size: 2rem; }
+  .section-desc { font-size: 0.92rem; }
+
+  .timeline-container { padding: 10px 0; }
+
+  .timeline-item,
+  .timeline-item.right {
+    padding-left: 45px;
+  }
+
+  .timeline-line { left: 18px; }
+
+  .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 3px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .timeline-photo { height: 200px; }
+
+  .scrapbook-grid {
+    padding: 5px;
+    gap: 25px;
+  }
+
+  .polaroid-card { padding: 10px 10px 16px; }
+
+  .polaroid-img-box { height: min(80vw, 320px); }
+
+  .note-text { font-size: 1.25rem; }
+
+  .interactive-envelope { min-height: 330px; }
+  .envelope-flap { height: 175px; }
+  .envelope-front { height: 190px; }
+
+  .letter-paper { padding: 22px 16px; }
+
+  .letter-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .letter-body {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .signature-name { font-size: 1.8rem; }
+
+  .birthday-cake { width: min(280px, 85vw); }
+  .cake-plate { width: min(320px, 95vw); }
+
+  .final-card { padding: 38px 20px; }
+  .final-title { font-size: 2.2rem; }
+  .quote-text { font-size: 1.15rem; }
+
+  .music-widget {
+    max-width: calc(100vw - 32px);
+    right: 16px;
+    bottom: 12px;
+  }
+
+  .music-text {
+    max-width: 120px;
+    overflow: hidden;
+  }
+
+  .song-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lightbox-modal { padding: 12px; }
+
+  .lightbox-close {
+    top: 12px;
+    right: 18px;
+    font-size: 2rem;
+  }
+
+  .lightbox-content { max-width: 95vw; }
+  .lightbox-content img { max-height: 75vh; }
+
+  .help-modal { padding: 12px; }
+
+  .help-modal-content {
+    padding: 24px 18px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-logo { font-size: 1.15rem; }
+  .hero-title { font-size: 1.9rem; }
+  .timer-num { font-size: 1.15rem; }
+  .timer-label { font-size: 0.52rem; }
+  .section-title { font-size: 1.75rem; }
+  .photo-container { height: 330px; }
+}
