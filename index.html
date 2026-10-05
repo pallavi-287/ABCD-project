@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday KB ❤️ | A Romantic Surprise</title>
+  <meta name="description"
+    content="A warm, romantic and aesthetic birthday website created specially for KB on 7th October.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Background Particle Canvas -->
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- Romantic Ambient Audio Player Widget -->
+  <div class="music-widget" id="musicWidget">
+    <div class="music-info">
+      <div class="music-icon"><i class="fa-solid fa-music"></i></div>
+      <div class="music-text">
+        <span class="song-title">Romantic Melody</span>
+        <span class="song-sub">For KB ❤️</span>
+      </div>
+    </div>
+    <div class="music-controls">
+      <button id="musicToggleBtn" aria-label="Toggle Music" class="music-btn">
+        <i class="fa-solid fa-play" id="musicIcon"></i>
+      </button>
+    </div>
+    <div class="sound-waves" id="soundWaves">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">KB <span class="heart-pulse">❤️</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#memories" class="nav-link">Memories</a>
+        <a href="#photos" class="nav-link">Photos</a>
+        <a href="#letter" class="nav-link">A Letter</a>
+        <a href="#wishes" class="nav-link highlight">Birthday ❤️</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-glow"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge-tag">
+            <span class="sparkle-icon">✨</span> October 7th Special <span class="sparkle-icon">✨</span>
+          </div>
+
+          <h1 class="hero-title">
+            Happy Birthday <span class="title-highlight">KB</span> <span class="hero-heart">❤️</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            "To the person who makes ordinary moments feel a little more special..."
+          </p>
+
+          <!-- COUNTDOWN TIMER CONTAINER -->
+          <div class="countdown-box">
+            <h3 class="countdown-title"><i class="fa-regular fa-clock"></i> Countdown to KB's Special Day (October 7)
+            </h3>
+            <div class="countdown-timer" id="countdownTimer">
+              <div class="timer-card">
+                <span class="timer-num" id="days">00</span>
+                <span class="timer-label">Days</span>
+              </div>
+              <div class="timer-colon">:</div>
+              <div class="timer-card">
+                <span class="timer-num" id="hours">00</span>
+                <span class="timer-label">Hours</span>
+              </div>
+              <div class="timer-colon">:</div>
+              <div class="timer-card">
+                <span class="timer-num" id="minutes">00</span>
+                <span class="timer-label">Minutes</span>
+              </div>
+              <div class="timer-colon">:</div>
+              <div class="timer-card">
+                <span class="timer-num" id="seconds">00</span>
+                <span class="timer-label">Seconds</span>
+              </div>
+            </div>
+            <div id="birthdayTodayMsg" class="birthday-today-msg hidden">
+              🎉 Today is the day! Happy Birthday, KB! ❤️🎂
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#letter" class="btn btn-primary">
+              A Little Surprise For You ❤️
+            </a>
+            <a href="#memories" class="btn btn-secondary">
+              Our Moments ✨
+            </a>
+          </div>
+        </div>
+
+        <!-- HERO PHOTO FRAME -->
+        <!-- ========================================================================= -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb_hero.jpg' with KB's photo -->
+        <!-- ========================================================================= -->
+        <div class="hero-photo-wrapper">
+          <div class="polaroid-frame main-frame">
+            <div class="tape tape-top-left"></div>
+            <div class="tape tape-top-right"></div>
+
+            <div class="photo-container">
+              <!-- REPLACE PHOTO HERE: images/kb_hero.jpg -->
+              <img src="images/kb_hero.jpg" alt="KB Hero Portrait" id="heroPhotoImg" loading="eager">
+              <div class="photo-overlay"></div>
+            </div>
+
+            <div class="polaroid-caption">
+              <span class="caption-handwritten">Simply radiant, KB ✨</span>
+              <span class="caption-date">7th October</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MEMORIES SECTION -->
+    <section id="memories" class="section memories-section">
+      <div class="section-header">
+        <span class="section-subtitle">Scrapbook Timeline</span>
+        <h2 class="section-title">Our Little Moments ✨</h2>
+        <div class="divider-rose">
+          <span></span><i class="fa-solid fa-heart"></i><span></span>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"><i class="fa-solid fa-star"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-tape"></div>
+            <div class="timeline-photo">
+              <!-- ========================================================================= -->
+              <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb7.jpg' with KB's photo -->
+              <!-- ========================================================================= -->
+              <img src="images/kb7.jpg" alt="Memory 1">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">The Beginning ✨</span>
+              <h3>The Day Ordinary Became Magical</h3>
+              <p>Looking back, every simple conversation with you was a turning point. You brought light into spaces I
+                didn't even know were waiting for warmth.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"><i class="fa-solid fa-mug-hot"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-tape right-tape"></div>
+            <div class="timeline-photo">
+              <!-- ========================================================================= -->
+              <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb8.jpg' with KB's photo -->
+              <!-- ========================================================================= -->
+              <img src="images/kb8.jpg" alt="Memory 2">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Unforgettable Moments ☕</span>
+              <h3>Coffee, Laughter & Hours Flying By</h3>
+              <p>Those quiet afternoons spent sharing stories, silly jokes, and warm smiles. Time always moves a little
+                too fast whenever you're around.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"><i class="fa-solid fa-moon"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-tape"></div>
+            <div class="timeline-photo">
+              <!-- ========================================================================= -->
+              <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb2.jpg' with KB's photo -->
+              <!-- ========================================================================= -->
+              <img src="images/kb2.jpg" alt="Memory 3">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Starlit Conversations 💫</span>
+              <h3>Late Night Deep Talks</h3>
+              <p>Under the quiet night sky, sharing thoughts, dreams, and everything in between. Finding someone who
+                truly understands your heart is rare.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"><i class="fa-solid fa-sun"></i></div>
+          <div class="timeline-card">
+            <div class="timeline-tape right-tape"></div>
+            <div class="timeline-photo">
+              <!-- ========================================================================= -->
+              <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb4.jpg' with KB's photo -->
+              <!-- ========================================================================= -->
+              <img src="images/kb4.jpg" alt="Memory 4">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Today & Always 🌸</span>
+              <h3>Celebrating You</h3>
+              <p>Here's to all the memories we've created, and to all the unwritten chapters waiting for us ahead. Happy
+                Birthday to my favorite human.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section id="photos" class="section gallery-section">
+      <div class="section-header">
+        <span class="section-subtitle">Aesthetic Scrapbook Gallery</span>
+        <h2 class="section-title">Captured Memories 📸</h2>
+        <p class="section-desc">Click any polaroid to view it in full view ❤️</p>
+        <div class="divider-rose">
+          <span></span><i class="fa-solid fa-sparkles"></i><span></span>
+        </div>
+      </div>
+
+      <div class="scrapbook-grid">
+
+        <!-- Polaroid 1 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb1.jpg' -->
+        <div class="polaroid-card tilt-left" data-full="images/kb1.jpg" data-caption="That smile...">
+          <div class="paperclip"></div>
+          <div class="polaroid-img-box">
+            <img src="images/kb1.jpg" alt="KB Photo 1">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"That smile..." ❤️</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb2.jpg' -->
+        <div class="polaroid-card tilt-right" data-full="images/kb2.jpg" data-caption="One of my favorite memories ❤️">
+          <div class="tape tape-top"></div>
+          <div class="polaroid-img-box">
+            <img src="images/kb2.jpg" alt="KB Photo 2">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"One of my favorite memories ❤️"</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb3.jpg' -->
+        <div class="polaroid-card tilt-left-soft" data-full="images/kb3.jpg" data-caption="A moment worth remembering">
+          <div class="stamp-badge">7 OCT</div>
+          <div class="polaroid-img-box">
+            <img src="images/kb3.jpg" alt="KB Photo 3">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"A moment worth remembering" ✨</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 4 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb4.jpg' -->
+        <div class="polaroid-card tilt-right-soft" data-full="images/kb4.jpg" data-caption="Simply you.">
+          <div class="tape tape-top-right"></div>
+          <div class="polaroid-img-box">
+            <img src="images/kb4.jpg" alt="KB Photo 4">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"Simply you." 🌹</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 5 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb5.jpg' -->
+        <div class="polaroid-card tilt-left" data-full="images/kb5.jpg" data-caption="Pure magic ✨">
+          <div class="paperclip"></div>
+          <div class="polaroid-img-box">
+            <img src="images/kb5.jpg" alt="KB Photo 5">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"Pure magic ✨"</p>
+          </div>
+        </div>
+
+        <!-- Polaroid 6 -->
+        <!-- PHOTO REPLACEMENT LOCATION: Replace 'images/kb6.jpg' -->
+        <div class="polaroid-card tilt-right" data-full="images/kb6.jpg" data-caption="Forever favorite ❤️">
+          <div class="tape tape-top"></div>
+          <div class="polaroid-img-box">
+            <img src="images/kb6.jpg" alt="KB Photo 6">
+          </div>
+          <div class="polaroid-note">
+            <p class="note-text">"Forever favorite ❤️"</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="lightbox-modal">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="Zoomed Memory">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- BIRTHDAY MESSAGE & SURPRISE LETTER SECTION -->
+    <section id="letter" class="section letter-section">
+      <div class="section-header">
+        <span class="section-subtitle">From The Heart</span>
+        <h2 class="section-title">A Little Something From My Heart ❤️</h2>
+        <div class="divider-rose">
+          <span></span><i class="fa-solid fa-envelope-open-text"></i><span></span>
+        </div>
+      </div>
+
+      <div class="envelope-wrapper">
+        <!-- TRIGGER BUTTON -->
+        <div class="letter-trigger-box">
+          <p class="envelope-hint">I wrote a special secret letter just for you...</p>
+          <button id="openLetterBtn" class="btn btn-letter-trigger">
+            Open When You're Ready 💌
+          </button>
+        </div>
+
+        <!-- INTERACTIVE ENVELOPE CARD -->
+        <div id="interactiveEnvelope" class="interactive-envelope closed">
+          <div class="envelope-back"></div>
+          <div class="envelope-flap" id="envelopeFlap">
+            <div class="wax-seal" id="waxSeal">
+              <span class="seal-initials">KB</span>
+              <span class="seal-heart">❤️</span>
+            </div>
+          </div>
+          <div class="envelope-front"></div>
+
+          <!-- LETTER PAPER -->
+          <div class="letter-paper" id="letterPaper">
+            <div class="letter-header">
+              <span class="letter-date">October 7th</span>
+              <span class="letter-to">For My Favorite Person, KB ❤️</span>
+            </div>
+
+            <div class="letter-body" id="typewriterText">
+              <p><strong>Dearest KB,</strong></p>
+
+              <p>On this beautiful 7th of October, I wanted to create a little corner of the world just for you—a space
+                to celebrate the incredible, glowing person that you are.</p>
+
+              <p>From the gentle warmth in your smile to the effortless way you brighten every single day, you have a
+                rare gift of making ordinary moments feel extra special. Being around you is like finding a calm,
+                beautiful haven in the middle of a noisy world.</p>
+
+              <p>Thank you for all the laughter, the quiet comfort of shared moments, the late-night talks, and the
+                genuine kindness you give so freely. You mean more to me than words on a screen could ever fully
+                express.</p>
+
+              <p>Today is all about celebrating your life, your beautiful heart, and all the magical moments waiting for
+                you in the year ahead. May your path always be filled with endless warmth, genuine peace, deep laughter,
+                and every single dream your heart holds dear.</p>
+
+              <p>Happy Birthday, KB. You are truly loved, cherished, and appreciated—today and always. ❤️</p>
+            </div>
+
+            <div class="letter-footer">
+              <span class="signature-text">Forever & Always,</span>
+              <span class="signature-name">Yours ❤️</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BIRTHDAY CAKE & FINAL WISH SECTION -->
+    <section id="wishes" class="section wishes-section">
+      <div class="wishes-bg-overlay"></div>
+
+      <div class="wishes-container">
+
+        <!-- INTERACTIVE BIRTHDAY CAKE -->
+        <div class="cake-box">
+          <div class="cake-instruction" id="cakeInstruction">
+            ✨ Click the candles to make a wish & blow them out! ✨
+          </div>
+
+          <div class="birthday-cake" id="birthdayCake">
+            <!-- Candles -->
+            <div class="candles-row">
+              <div class="candle" data-candle="1">
+                <div class="flame" id="flame1"></div>
+                <div class="wick"></div>
+                <div class="candle-stick"></div>
+              </div>
+              <div class="candle" data-candle="2">
+                <div class="flame" id="flame2"></div>
+                <div class="wick"></div>
+                <div class="candle-stick"></div>
+              </div>
+              <div class="candle" data-candle="3">
+                <div class="flame" id="flame3"></div>
+                <div class="wick"></div>
+                <div class="candle-stick"></div>
+              </div>
+            </div>
+
+            <!-- Cake Layers -->
+            <div class="cake-top-layer">
+              <div class="icing"></div>
+              <div class="icing-drips">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="cake-middle-layer">
+              <div class="strawberries">🍓 🍓 🍓</div>
+            </div>
+            <div class="cake-bottom-layer">
+              <div class="cake-decor">✨ KB ✨</div>
+            </div>
+            <div class="cake-plate"></div>
+          </div>
+
+          <div class="wish-reveal-msg hidden" id="wishRevealMsg">
+            🎉 🌟 <strong>Wish Made!</strong> May all your secret dreams come true, KB! 🌟 🎉
+          </div>
+        </div>
+
+        <!-- FINAL HEARTFELT MESSAGE -->
+        <div class="final-card">
+          <h2 class="final-title">Happy Birthday, KB ❤️</h2>
+
+          <div class="final-quote">
+            <p class="quote-text">
+              "May your smile always stay this beautiful, your heart always stay this warm, and may this year bring you
+              all the happiness you deserve."
+            </p>
+          </div>
+
+          <div class="final-sparkles">
+            ✨ 💖 🌸 🥂 💖 ✨
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-love">Created with all my heart for <strong>KB</strong> ❤️</p>
+      <p class="footer-date">October 7th Special Edition</p>
+
+
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
